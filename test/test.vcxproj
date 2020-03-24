@@ -111,7 +111,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>openvslam.lib;opencv.lib;DBoW2.lib;yaml-cpp.lib;g2o.lib;g2o_csparse_extension.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);\usr\local\lib\openvslam</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>$(OutDir)test.exe</Command>
