@@ -94,8 +94,8 @@
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>openvslam.lib;opencv.lib;DBoW2.lib;yaml-cpp.lib;g2o.lib;g2o_csparse_extension.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>openvslamd.lib;opencvd.lib;DBoW2d.lib;yaml-cppd.lib;g2od.lib;g2o_csparse_extensiond.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>\usr\local\lib\openvslam\;$(OutDir);</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>$(OutDir)test.exe</Command>
@@ -111,7 +111,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>openvslam.lib;opencv.lib;DBoW2.lib;yaml-cpp.lib;g2o.lib;g2o_csparse_extension.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);\usr\local\lib\openvslam</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>\usr\local\lib\openvslam\;$(OutDir);\usr\local\lib\openvslam</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>$(OutDir)test.exe</Command>
